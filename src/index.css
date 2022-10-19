@@ -117,7 +117,7 @@ body {
     width: 80vw;
     margin: auto;
     position: fixed;
-    z-index: 4;
+    z-index: 40;
     top: 10vh;
     left: 10vw;
     background: rgba(255, 255, 255, 0.3);
