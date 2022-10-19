@@ -254,6 +254,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .header {
+        height: fit-content;
+    }
     .gif {
         display: none;
     }
