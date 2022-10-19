@@ -6,6 +6,7 @@ import Modal from './Modal';
 function Submit({ tasks, toClick, toDelete, newTasks }) {
     const [showModal, setShowModal] = useState(false)
     const [taskId, setTaskId] = useState("")
+    
     const handleClick = (e) => {
         e.preventDefault()
         toClick(e.currentTarget.id)
