@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.app {
+    text-align: center;
+    background-color: #d1eaadef;
+}
+
+.header {
+    height: 10vh;
+    padding: 10px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: orangered;
+    color: #ccc;
+}
+
+.header h1 {
+    margin: 0;
+    color: #f4f4f4ea;
+}
+
+.body {
+    margin-top: 10vh;
+    min-height: calc(60vh - 15px);
+}
+
+#todo-input {
+    width: 70%;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.todo {
+    width: 70vw;
+    margin: 15px auto;
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.todo>li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.todo>div {
+    display: flex;
+    align-items: center;
+}
+
+.todo>div>.btn:first-of-type {
+    background-color: #555;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.todo>div>.btn:last-of-type {
+    background-color: orangered;
+    color: #fff;
+}
+
+.todo>div>.btn:last-of-type:hover {
+    background-color: #cc0001;
+    color: #fff;
+}
+
+.todo>div>.btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.icon-incomplete {
+    display: none;
+}
+
+.icon-completed {
+    display: block;
+    color: green
+}
+
+.modal {
+    min-height: 80vh;
+    width: 80vw;
+    margin: auto;
+    position: fixed;
+    z-index: 4;
+    top: 10vh;
+    left: 10vw;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.modal>header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.modal>header h2 {
+    color: orangered;
+    margin-left: 20px;
+}
+
+.close-modal {
+    color: orangered;
+}
+
+.close-modal:hover {
+    color: red;
+}
+
+.modal>div {
+    margin: 20px 20px;
+}
+
+.task-lg {
+    color: #1180c0;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.inline-icon {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.task-status {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.gif {
+    width: 350px;
+}
+
+.entry {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.entry>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: left;
+}
+
+.entry>div:last-child {
+    width: 500px;
+    overflow: hidden;
+}
+
+.time {
+    text-align: left;
+}
+
+.quote {
+    color: orangered;
+    text-overflow: clip;
+    text-align: center;
+}
+
+.footer {
+    background-color: orangered;
+    color: #ccd3d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 15vh;
+}
+
+.socials {
+    padding: 10px;
+}
+
+.footer-icon {
+    padding-right: 10px;
+    color: #fff;
+}
+.footer-icon:hover {
+    color: #0f729c;
+}
+
+.date-time-form {
+    width: 50%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px orangered solid;
+}
+.date-time-form:focus {
+    border: 2px orangered solid;
+    outline: orangered;
+}
+.set-reminder {
+    text-align: left;
+    color: #555;
+}
+.reminder-date {
+    color: #1180c0;
+}
+.past-reminder {
+    text-align: left;
+    color: #cc0001;
+    font-size: larger;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .gif {
+        display: none;
+    }
+
+    .entry {
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        margin: auto;
+    }
+    .entry>div:last-child {
+        align-self: center;
+        flex-wrap: wrap;
+    }
+    .date-time-form {
+        display: block;
+        width: 50%;
+        margin: auto;
+        box-sizing: border-box;
+
+    }
+    .time {
+        text-align: center;
+    }
+    .entry>.btn {
+        margin: 0;
+        align-self: center;
+    }
+    .set-reminder {
+        text-align: center;
+    }
+    .past-reminder {
+        display: inline-block;
+        text-align: center;
+        text-overflow: clip;
+    }
+}
