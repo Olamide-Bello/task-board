@@ -25,6 +25,9 @@ body {
     margin: 0;
     color: #f4f4f4ea;
 }
+.header p {
+    margin: 0;
+}
 
 .body {
     margin-top: 10vh;
