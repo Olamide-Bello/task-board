@@ -11,6 +11,7 @@ body {
 
 .header {
     height: 10vh;
+    min-height: 10vh;
     padding: 10px 0;
     width: 100%;
     position: sticky;
