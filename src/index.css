@@ -17,13 +17,13 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: orangered;
-    color: #ccc;
+    background-color: lightgreen;
+    color: #333;
 }
 
 .header h1 {
     margin: 0;
-    color: #f4f4f4ea;
+    color: #333;
 }
 .header p {
     margin: 0;
@@ -209,8 +209,8 @@ body {
 }
 
 .footer {
-    background-color: orangered;
-    color: #ccd3d9;
+    background-color: lightgreen;;
+    color: #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,10 +225,10 @@ body {
 
 .footer-icon {
     padding-right: 10px;
-    color: #fff;
+    color: #333;
 }
 .footer-icon:hover {
-    color: #0f729c;
+    color: #fff;
 }
 
 .date-time-form {
