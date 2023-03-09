@@ -1,4 +1,4 @@
-import moment from "moment/moment";
+import moment from "moment/moment.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faClipboardList, faCircleCheck, faHandsClapping } from "@fortawesome/free-solid-svg-icons";
 import gif2 from "../Gifs/2.gif"
