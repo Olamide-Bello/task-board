@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck, faClock } from "@fortawesome/free-solid-svg-icons";
 import { useState } from 'react';
-import Modal from './Modal';
+import Modal from './Modal.js';
 
 function Submit({ tasks, toClick, toDelete, newTasks }) {
     const [showModal, setShowModal] = useState(false)

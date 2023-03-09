@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import FooterComponent from "./components/Footer";
-import Header from "./components/Header";
-import InputField from "./components/InputField";
-import Submit from "./components/Submit";
+import FooterComponent from "./components/Footer.js";
+import Header from "./components/Header.js";
+import InputField from "./components/InputField.js";
+import Submit from "./components/Submit.js";
 
 
 
